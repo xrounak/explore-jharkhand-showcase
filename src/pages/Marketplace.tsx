@@ -10,6 +10,12 @@ import basketImage from '@/assets/handicraft-basket.jpg';
 import jewelryImage from '@/assets/handicraft-jewelry.jpg';
 import potteryImage from '@/assets/handicraft-pottery.jpg';
 import textileImage from '@/assets/handicraft-textile.jpg';
+import tribalMaskImage from '@/assets/tribal-mask.jpg';
+import tribalDrumsImage from '@/assets/tribal-drums.jpg';
+import brassVesselsImage from '@/assets/brass-vessels.jpg';
+import tribalShawlImage from '@/assets/tribal-shawl.jpg';
+import beadJewelryImage from '@/assets/bead-jewelry.jpg';
+import woodCarvingsImage from '@/assets/wood-carvings.jpg';
 
 const Marketplace = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -67,7 +73,6 @@ const Marketplace = () => {
       artisan: 'Kharia Weaver Society',
       inStock: false
     },
-    // Duplicate some products for demonstration
     {
       id: 5,
       name: 'Mini Bamboo Storage Set',
@@ -91,6 +96,222 @@ const Marketplace = () => {
       description: 'Beautiful pair of traditional tribal earrings with intricate metalwork.',
       artisan: 'Munda Artisan Guild',
       inStock: true
+    },
+    {
+      id: 7,
+      name: 'Wooden Tribal Mask',
+      price: '₹2,400',
+      originalPrice: '₹3,000',
+      image: tribalMaskImage,
+      category: 'art',
+      rating: 4.9,
+      description: 'Authentic carved wooden mask representing tribal deities and spiritual beliefs.',
+      artisan: 'Ho Carver Collective',
+      inStock: true
+    },
+    {
+      id: 8,
+      name: 'Traditional Tribal Drums',
+      price: '₹4,500',
+      originalPrice: '₹5,500',
+      image: tribalDrumsImage,
+      category: 'instruments',
+      rating: 4.7,
+      description: 'Handmade tribal drums with leather surface, perfect for cultural performances.',
+      artisan: 'Santal Music Makers',
+      inStock: true
+    },
+    {
+      id: 9,
+      name: 'Brass Vessel Collection',
+      price: '₹3,800',
+      originalPrice: '₹4,800',
+      image: brassVesselsImage,
+      category: 'pottery',
+      rating: 4.6,
+      description: 'Set of traditional brass and copper vessels with etched tribal patterns.',
+      artisan: 'Oraon Metal Works',
+      inStock: true
+    },
+    {
+      id: 10,
+      name: 'Handwoven Tribal Shawl',
+      price: '₹2,200',
+      originalPrice: '₹2,800',
+      image: tribalShawlImage,
+      category: 'textiles',
+      rating: 4.8,
+      description: 'Warm tribal shawl with geometric patterns in natural organic cotton.',
+      artisan: 'Kharia Weaver Society',
+      inStock: true
+    },
+    {
+      id: 11,
+      name: 'Colorful Bead Jewelry Set',
+      price: '₹1,600',
+      originalPrice: '₹2,000',
+      image: beadJewelryImage,
+      category: 'jewelry',
+      rating: 4.5,
+      description: 'Vibrant beadwork jewelry including bracelets and anklets with glass beads.',
+      artisan: 'Munda Artisan Guild',
+      inStock: true
+    },
+    {
+      id: 12,
+      name: 'Wooden Sculpture Set',
+      price: '₹3,200',
+      originalPrice: '₹4,000',
+      image: woodCarvingsImage,
+      category: 'art',
+      rating: 4.9,
+      description: 'Hand-carved wooden figurines representing tribal animals and deities.',
+      artisan: 'Ho Carver Collective',
+      inStock: true
+    },
+    {
+      id: 13,
+      name: 'Ceramic Tea Set',
+      price: '₹1,800',
+      originalPrice: '₹2,300',
+      image: potteryImage,
+      category: 'pottery',
+      rating: 4.7,
+      description: 'Beautiful ceramic tea set with traditional tribal motifs, perfect for serving.',
+      artisan: 'Oraon Potter Collective',
+      inStock: true
+    },
+    {
+      id: 14,
+      name: 'Tribal Wall Hanging',
+      price: '₹1,400',
+      originalPrice: '₹1,800',
+      image: textileImage,
+      category: 'textiles',
+      rating: 4.6,
+      description: 'Decorative wall hanging with traditional tribal patterns and natural fibers.',
+      artisan: 'Kharia Weaver Society',
+      inStock: true
+    },
+    {
+      id: 15,
+      name: 'Large Storage Basket',
+      price: '₹1,800',
+      originalPrice: '₹2,200',
+      image: basketImage,
+      category: 'baskets',
+      rating: 4.4,
+      description: 'Large capacity bamboo basket for storage and laundry, durable construction.',
+      artisan: 'Santhal Tribal Cooperative',
+      inStock: true
+    },
+    {
+      id: 16,
+      name: 'Silver Tribal Bracelet',
+      price: '₹2,400',
+      originalPrice: '₹3,000',
+      image: jewelryImage,
+      category: 'jewelry',
+      rating: 4.8,
+      description: 'Elegant silver bracelet with traditional engravings and tribal symbols.',
+      artisan: 'Munda Artisan Guild',
+      inStock: false
+    },
+    {
+      id: 17,
+      name: 'Decorative Tribal Pot',
+      price: '₹1,100',
+      originalPrice: '₹1,400',
+      image: potteryImage,
+      category: 'pottery',
+      rating: 4.5,
+      description: 'Ornamental pottery with intricate tribal designs, perfect for plant displays.',
+      artisan: 'Oraon Potter Collective',
+      inStock: true
+    },
+    {
+      id: 18,
+      name: 'Traditional Dance Mask',
+      price: '₹2,800',
+      originalPrice: '₹3,500',
+      image: tribalMaskImage,
+      category: 'art',
+      rating: 4.9,
+      description: 'Ceremonial dance mask used in tribal festivals, authentic cultural artifact.',
+      artisan: 'Ho Carver Collective',
+      inStock: true
+    },
+    {
+      id: 19,
+      name: 'Bamboo Wind Chime',
+      price: '₹650',
+      originalPrice: '₹800',
+      image: basketImage,
+      category: 'baskets',
+      rating: 4.3,
+      description: 'Musical wind chime made from natural bamboo with soothing sounds.',
+      artisan: 'Santhal Tribal Cooperative',
+      inStock: true
+    },
+    {
+      id: 20,
+      name: 'Tribal Textile Runner',
+      price: '₹1,900',
+      originalPrice: '₹2,400',
+      image: textileImage,
+      category: 'textiles',
+      rating: 4.7,
+      description: 'Table runner with traditional tribal patterns, handwoven with natural dyes.',
+      artisan: 'Kharia Weaver Society',
+      inStock: true
+    },
+    {
+      id: 21,
+      name: 'Copper Water Vessel',
+      price: '₹2,100',
+      originalPrice: '₹2,600',
+      image: brassVesselsImage,
+      category: 'pottery',
+      rating: 4.6,
+      description: 'Traditional copper water storage vessel with health benefits and tribal engravings.',
+      artisan: 'Oraon Metal Works',
+      inStock: true
+    },
+    {
+      id: 22,
+      name: 'Tribal Nose Ring Set',
+      price: '₹900',
+      originalPrice: '₹1,200',
+      image: jewelryImage,
+      category: 'jewelry',
+      rating: 4.4,
+      description: 'Traditional tribal nose jewelry in silver with authentic cultural significance.',
+      artisan: 'Munda Artisan Guild',
+      inStock: true
+    },
+    {
+      id: 23,
+      name: 'Wooden Tribal Spoon Set',
+      price: '₹450',
+      originalPrice: '₹600',
+      image: woodCarvingsImage,
+      category: 'art',
+      rating: 4.5,
+      description: 'Hand-carved wooden spoons with tribal motifs, eco-friendly dining accessories.',
+      artisan: 'Ho Carver Collective',
+      inStock: true
+    },
+    {
+      id: 24,
+      name: 'Tribal Festival Bag',
+      price: '₹1,300',
+      originalPrice: '₹1,600',
+      image: textileImage,
+      category: 'textiles',
+      rating: 4.6,
+      description: 'Traditional shoulder bag with tribal embroidery, perfect for festivals.',
+      artisan: 'Kharia Weaver Society',
+      inStock: true
     }
   ];
 
@@ -98,8 +319,10 @@ const Marketplace = () => {
     { value: 'all', label: 'All Items' },
     { value: 'baskets', label: 'Baskets & Storage' },
     { value: 'jewelry', label: 'Jewelry' },
-    { value: 'pottery', label: 'Pottery & Ceramics' },
-    { value: 'textiles', label: 'Textiles & Fabrics' }
+    { value: 'pottery', label: 'Pottery & Vessels' },
+    { value: 'textiles', label: 'Textiles & Fabrics' },
+    { value: 'art', label: 'Art & Sculptures' },
+    { value: 'instruments', label: 'Musical Instruments' }
   ];
 
   const priceRanges = [

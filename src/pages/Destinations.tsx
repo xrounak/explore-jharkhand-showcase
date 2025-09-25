@@ -10,6 +10,12 @@ import netarhatImage from '@/assets/netarhat.jpg';
 import betlaImage from '@/assets/betla-park.jpg';
 import hundruImage from '@/assets/hundru-falls.jpg';
 import deogarImage from '@/assets/deoghar.jpg';
+import patratuImage from '@/assets/patratu-dam.jpg';
+import parashnathImage from '@/assets/parashnath-hill.jpg';
+import ranchiLakeImage from '@/assets/ranchi-lake.jpg';
+import jagannathImage from '@/assets/jagannath-temple.jpg';
+import jonhaImage from '@/assets/jonha-falls.jpg';
+import dalmaImage from '@/assets/dalma-sanctuary.jpg';
 
 const Destinations = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -61,6 +67,72 @@ const Destinations = () => {
       duration: '2 days',
       rating: 4.6,
       highlights: ['Baidyanath Temple', 'Naulakha Mandir', 'Spiritual Experience', 'Local Culture']
+    },
+    {
+      id: 5,
+      name: 'Patratu Dam',
+      location: 'Ramgarh District',
+      image: patratuImage,
+      category: 'lake',
+      description: 'Serene artificial lake surrounded by rolling hills, perfect for boating and peaceful getaways.',
+      duration: '1-2 days',
+      rating: 4.4,
+      highlights: ['Boating', 'Lake Views', 'Hill Station', 'Water Sports']
+    },
+    {
+      id: 6,
+      name: 'Parashnath Hills',
+      location: 'Giridih District',
+      image: parashnathImage,
+      category: 'hill-station',
+      description: 'Highest peak in Jharkhand with ancient Jain temples, sacred pilgrimage site with panoramic views.',
+      duration: '2-3 days',
+      rating: 4.9,
+      highlights: ['Highest Peak', 'Jain Temples', 'Trekking', 'Panoramic Views']
+    },
+    {
+      id: 7,
+      name: 'Ranchi Lake',
+      location: 'Ranchi District',
+      image: ranchiLakeImage,
+      category: 'lake',
+      description: 'Artificial lake in the heart of Ranchi city, popular for boating and evening walks.',
+      duration: 'Half day',
+      rating: 4.2,
+      highlights: ['City Lake', 'Boating', 'Evening Walks', 'Urban Oasis']
+    },
+    {
+      id: 8,
+      name: 'Jagannath Temple',
+      location: 'Ranchi District',
+      image: jagannathImage,
+      category: 'temple',
+      description: 'Replica of the famous Puri temple, magnificent architecture and spiritual significance.',
+      duration: 'Half day',
+      rating: 4.5,
+      highlights: ['Temple Architecture', 'Spiritual Site', 'Cultural Heritage', 'Annual Rath Yatra']
+    },
+    {
+      id: 9,
+      name: 'Jonha Falls',
+      location: 'Ranchi District',
+      image: jonhaImage,
+      category: 'waterfall',
+      description: 'Beautiful waterfall surrounded by dense forests, ideal for trekking and nature photography.',
+      duration: '1 day',
+      rating: 4.6,
+      highlights: ['Forest Trekking', 'Photography', 'Natural Pool', 'Adventure Sports']
+    },
+    {
+      id: 10,
+      name: 'Dalma Wildlife Sanctuary',
+      location: 'East Singhbhum District',
+      image: dalmaImage,
+      category: 'wildlife',
+      description: 'Hill sanctuary known for elephant herds, trekking trails, and rich biodiversity.',
+      duration: '2-3 days',
+      rating: 4.3,
+      highlights: ['Elephant Herds', 'Trekking Trails', 'Hill Views', 'Biodiversity']
     }
   ];
 
@@ -69,7 +141,8 @@ const Destinations = () => {
     { value: 'hill-station', label: 'Hill Stations' },
     { value: 'wildlife', label: 'Wildlife' },
     { value: 'waterfall', label: 'Waterfalls' },
-    { value: 'temple', label: 'Temples' }
+    { value: 'temple', label: 'Temples' },
+    { value: 'lake', label: 'Lakes & Dams' }
   ];
 
   const filteredDestinations = useMemo(() => {

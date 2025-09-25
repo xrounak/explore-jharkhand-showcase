@@ -11,6 +11,8 @@ import netarhatImage from '@/assets/netarhat.jpg';
 import betlaImage from '@/assets/betla-park.jpg';
 import hundruImage from '@/assets/hundru-falls.jpg';
 import deogarImage from '@/assets/deoghar.jpg';
+import patratuImage from '@/assets/patratu-dam.jpg';
+import parashnathImage from '@/assets/parashnath-hill.jpg';
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -26,22 +28,22 @@ const Home = () => {
       description: 'Queen of Chotanagpur, famous for sunrise and sunset views from the hilltop.'
     },
     {
-      name: 'Betla National Park',
-      location: 'Palamau District', 
-      image: betlaImage,
-      description: 'Wildlife sanctuary home to tigers, elephants, and diverse flora and fauna.'
+      name: 'Patratu Dam',
+      location: 'Ramgarh District',
+      image: patratuImage,
+      description: 'Serene artificial lake surrounded by rolling hills, perfect for boating and peaceful getaways.'
+    },
+    {
+      name: 'Parashnath Hills',
+      location: 'Giridih District',
+      image: parashnathImage,
+      description: 'Highest peak in Jharkhand with ancient Jain temples and panoramic views.'
     },
     {
       name: 'Hundru Falls',
       location: 'Ranchi District',
       image: hundruImage,
       description: '320 feet waterfall cascading down rocky cliffs, a spectacular natural wonder.'
-    },
-    {
-      name: 'Deoghar',
-      location: 'Deoghar District',
-      image: deogarImage,
-      description: 'Sacred pilgrimage site with ancient temples and rich spiritual heritage.'
     }
   ];
 
