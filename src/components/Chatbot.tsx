@@ -77,7 +77,7 @@ const Chatbot = () => {
           isOpen ? 'hidden' : 'flex'
         } items-center justify-center bg-gradient-primary hover:scale-110`}
       >
-        <MessageCircle className="h-6 w-6 text-white" />
+        <MessageCircle className="h-6 w-6 text-black" />
       </Button>
 
       {/* Chat Modal */}
