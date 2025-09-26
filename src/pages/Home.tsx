@@ -116,7 +116,7 @@ const Home = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="btn-outline text-white border-white hover:bg-white hover:text-foreground"
+              className="btn-outline text-black border-white hover:bg-white hover:text-foreground"
               onClick={() => navigate('/itinerary')}
             >
               Plan Your Trip
