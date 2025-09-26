@@ -71,17 +71,7 @@ const Chatbot = () => {
   return (
     <>
       {/* Chat Toggle Button */}
-<Button
-  onClick={() => setIsOpen(true)}
-  className={`fixed bottom-8 right-8 rounded-full w-16 h-16 shadow-2xl 
-    bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 
-    hover:scale-125 hover:shadow-[0_0_30px_rgba(255,0,0,0.6)] 
-    transition-all duration-300 z-50 
-    ${isOpen ? 'hidden' : 'flex'} 
-    items-center justify-center`}
->
-  <MessageCircle className="h-8 w-8 text-white drop-shadow-lg" />
-</Button>
+<Button onClick={() => setIsOpen(true)} className={fixed bottom-6 right-6 rounded-full w-14 h-14 shadow-lg bg-gradient-primary hover:shadow-xl transition-all duration-300 z-40 ${ isOpen ? 'hidden' : 'flex' } items-center justify-center bg-gradient-primary hover:scale-110} > <MessageCircle className="h-6 w-6 text-black" /> </Button>
 
 
       {/* Chat Modal */}
