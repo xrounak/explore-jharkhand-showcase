@@ -73,7 +73,7 @@ const Chatbot = () => {
       {/* Chat Toggle Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 rounded-full w-14 h-14 shadow-lg hover:shadow-xl transition-all duration-300 z-40 ${
+        className={`fixed bottom-6 right-6 rounded-full w-14 h-14 shadow-lg bg-gradient-primary hover:shadow-xl transition-all duration-300 z-40 ${
           isOpen ? 'hidden' : 'flex'
         } items-center justify-center bg-gradient-primary hover:scale-110`}
       >
@@ -98,7 +98,7 @@ const Chatbot = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(false)}
-              className="text-white hover:bg-white/10 rounded-full p-1"
+              className="text-black hover:bg-white/10 rounded-full p-1"
             >
               <X className="h-4 w-4" />
             </Button>
